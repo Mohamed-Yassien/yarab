@@ -5,8 +5,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../cubit/home_cubit/home_cubit.dart';
 import '../cubit/home_cubit/home_states.dart';
 
-
-
 class ProductsScreen extends StatelessWidget {
   const ProductsScreen({Key? key}) : super(key: key);
 

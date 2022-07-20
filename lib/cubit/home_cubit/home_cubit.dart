@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:yarab/cubit/home_cubit/home_states.dart';
 
-
-
 import '../../models/home_model.dart';
 import '../../modules/categories_Screen.dart';
 import '../../modules/favorites_screen.dart';
@@ -15,7 +13,6 @@ import '../../shared/constants.dart';
 
 class HomeCubit extends Cubit<HomeStates> {
   HomeCubit() : super(HomeInitialState());
-
   static HomeCubit get(context) => BlocProvider.of(context);
 
   List<Widget> bottomBarScreens = [

@@ -13,15 +13,15 @@ class HomeData {
   List<ProductModel>? products = [];
 
   HomeData.fromJson(Map<String, dynamic> json) {
-    json['banners'].forEach(
-      (element) {
-        banners?.add(element);
-      },
+    banners = List<BannerModel>.from(
+      json["banners"].map(
+        (x) => BannerModel.fromJson(x),
+      ),
     );
-    json['products'].forEach(
-      (element) {
-        products?.add(element);
-      },
+    products = List<ProductModel>.from(
+      json["products"].map(
+        (x) => ProductModel.fromJson(x),
+      ),
     );
   }
 }
@@ -57,3 +57,16 @@ class ProductModel {
     inCart = json['in_cart'];
   }
 }
+// Map<String,dynamic> bannersList = jsonDecode(json['banners']);
+// Map<String,dynamic> productsList = jsonDecode(json['products']);
+//
+// bannersList['banners'].forEach(
+//   (element) {
+//     banners?.add(element);
+//   },
+// );
+// productsList['products'].forEach(
+//   (element) {
+//     products?.add(element);
+//   },
+// );

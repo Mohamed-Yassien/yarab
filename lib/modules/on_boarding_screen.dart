@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
 import '../models/board_model.dart';
 import '../network/local/cache_helper.dart';
 import '../shared/methods.dart';

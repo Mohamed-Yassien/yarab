@@ -9,7 +9,6 @@ import '../shared/styles/themes.dart';
 import 'cubit/bloc_observer.dart';
 import 'modules/on_boarding_screen.dart';
 import 'shared/constants.dart';
-//
 
 
 
